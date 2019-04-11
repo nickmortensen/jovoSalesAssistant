@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickmortensen/JonesyBotRefactored.git"
+    "url": "git+https://github.com/nickmortensen/jovoSalesAssistant.git"
   },
   "author": "nivck mottrndrn",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nickmortensen/JonesyBotRefactored/issues"
+    "url": "https://github.com/nickmortensen/jovoSalesAssistant/issues"
   },
-  "homepage": "https://github.com/nickmortensen/JonesyBotRefactored#readme"
+  "homepage": "https://github.com/nickmortensen/jovoSalesAssistant#readme"
 }
