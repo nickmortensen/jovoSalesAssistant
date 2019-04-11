@@ -1,3 +1,8 @@
+
+[![Jovo Framework](https://github.com/nickmortensen/jovoSalesAssistant/blob/master/chatboticon-googlehangouts.png)]
+<p align="center">Jones Sales Assistant ⭐️</p>
+
+
 [![Jovo Framework](https://www.jovo.tech/img/github-logo.png)](https://www.jovo.tech)
 
 <p align="center">Jones Sales Assistant is using the  <a href="https://github.com/jovotech/jovo-framework-nodejs">Jovo Framework</a> ⭐️</p>
@@ -12,11 +17,6 @@
 Jovo framework enabled Sales Assistant for Jones Sign company
 command:
 
-```sh
-$ jovo new <directory>
 
-## Alternative
-$ jovo new <directory> --template helloworld
-```
 
 
