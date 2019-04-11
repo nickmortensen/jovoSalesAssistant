@@ -1,5 +1,6 @@
 
-(https://github.com/nickmortensen/jovoSalesAssistant/blob/master/chatboticon-googlehangouts.png)<p align="center">Jones Sales Assistant ⭐️</p>
+<img align="center" src="https://github.com/nickmortensen/jovoSalesAssistant/blob/master/chatboticon-googlehangouts.png" />
+<p align="center">Jones Sales Assistant ⭐️</p>
 
 
 [![Jovo Framework](https://www.jovo.tech/img/github-logo.png)](https://www.jovo.tech)
