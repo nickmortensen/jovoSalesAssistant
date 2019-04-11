@@ -1,5 +1,5 @@
 
-<img align="center" src="https://github.com/nickmortensen/jovoSalesAssistant/blob/master/chatboticon-googlehangouts.png" />
+<img style="display:block; margin: 0px auto;" src="https://github.com/nickmortensen/jovoSalesAssistant/blob/master/chatboticon-googlehangouts.png" />
 <p align="center">Jones Sales Assistant ⭐️</p>
 
 
