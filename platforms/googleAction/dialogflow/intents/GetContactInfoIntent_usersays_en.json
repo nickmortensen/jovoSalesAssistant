@@ -1,0 +1,782 @@
+[
+	{
+		"data": [
+			{
+				"text": "can I get the email for Dave Rose",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can you get me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " on ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "i need contact information for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "call up the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "get the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "do you have ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can I get the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " of ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can I get the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "gimmee the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "gimmee an ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "gimmee a ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "give me an ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "give me a ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "give me ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " of ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " on ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			},
+			{
+				"text": " of ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what is the ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			},
+			{
+				"text": " of ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what is the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what is the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " of ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what is the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " on ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "whats the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "I want the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "I want a ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "I want an ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can you tell me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can you tell me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " of ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can you tell me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " on ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can you get me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "can you get me the ",
+				"userDefined": false
+			},
+			{
+				"text": "contactInfo",
+				"userDefined": true,
+				"alias": "contactInfo",
+				"meta": "@CONTACTINFO"
+			},
+			{
+				"text": " of ",
+				"userDefined": false
+			},
+			{
+				"text": "contact",
+				"userDefined": true,
+				"alias": "contact",
+				"meta": "@CONTACTS"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

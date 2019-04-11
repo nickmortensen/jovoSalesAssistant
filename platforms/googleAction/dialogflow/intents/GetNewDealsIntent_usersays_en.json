@@ -1,0 +1,158 @@
+[
+	{
+		"data": [
+			{
+				"text": "What are the latest deals for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "What has closed recently for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "get me the latest deals",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "get me the latest deals in ",
+				"userDefined": false
+			},
+			{
+				"text": "pipeline",
+				"userDefined": true,
+				"alias": "pipeline",
+				"meta": "@PIPELINE"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "new deals",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what are the new deals",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what are the new deals for ",
+				"userDefined": false
+			},
+			{
+				"text": "pipeline",
+				"userDefined": true,
+				"alias": "pipeline",
+				"meta": "@PIPELINE"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "get new deals",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what is new in ",
+				"userDefined": false
+			},
+			{
+				"text": "pipeline",
+				"userDefined": true,
+				"alias": "pipeline",
+				"meta": "@PIPELINE"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "whats new in ",
+				"userDefined": false
+			},
+			{
+				"text": "pipeline",
+				"userDefined": true,
+				"alias": "pipeline",
+				"meta": "@PIPELINE"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "get recent ",
+				"userDefined": false
+			},
+			{
+				"text": "pipeline",
+				"userDefined": true,
+				"alias": "pipeline",
+				"meta": "@PIPELINE"
+			},
+			{
+				"text": " deals",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

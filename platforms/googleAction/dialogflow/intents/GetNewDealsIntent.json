@@ -1,0 +1,23 @@
+{
+	"name": "GetNewDealsIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "salesperson",
+					"value": "$salesperson",
+					"dataType": "@SALESPERSON"
+				},
+				{
+					"isList": true,
+					"name": "pipeline",
+					"value": "$pipeline",
+					"dataType": "@PIPELINE"
+				}
+			]
+		}
+	]
+}

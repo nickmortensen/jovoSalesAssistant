@@ -1,0 +1,105 @@
+[
+	{
+		"value": "website",
+		"synonyms": [
+			"website",
+			"homepage",
+			"webpage",
+			"url",
+			"ewe are el"
+		]
+	},
+	{
+		"value": "zip",
+		"synonyms": [
+			"zip",
+			"zipcode",
+			"zip code",
+			"postal code"
+		]
+	},
+	{
+		"value": "state",
+		"synonyms": [
+			"state"
+		]
+	},
+	{
+		"value": "city",
+		"synonyms": [
+			"city"
+		]
+	},
+	{
+		"value": "extension",
+		"synonyms": [
+			"extension",
+			"ext"
+		]
+	},
+	{
+		"value": "mobilephone",
+		"synonyms": [
+			"mobilephone",
+			"mobile",
+			"mobil",
+			"cell phone"
+		]
+	},
+	{
+		"value": "all",
+		"synonyms": [
+			"all",
+			"all info",
+			"any info",
+			"any information",
+			"all information",
+			"summary",
+			"the rundown"
+		]
+	},
+	{
+		"value": "phone",
+		"synonyms": [
+			"phone",
+			"phone number",
+			"number",
+			"telephone",
+			"digits"
+		]
+	},
+	{
+		"value": "name",
+		"synonyms": [
+			"name"
+		]
+	},
+	{
+		"value": "title",
+		"synonyms": [
+			"title",
+			"job title",
+			"position",
+			"position within",
+			"position title"
+		]
+	},
+	{
+		"value": "email",
+		"synonyms": [
+			"email",
+			"email address"
+		]
+	},
+	{
+		"value": "company",
+		"synonyms": [
+			"company",
+			"company name",
+			"business",
+			"entity",
+			"operation",
+			"outfit"
+		]
+	}
+]

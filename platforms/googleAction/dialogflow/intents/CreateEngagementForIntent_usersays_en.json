@@ -1,0 +1,266 @@
+[
+	{
+		"data": [
+			{
+				"text": "log a ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "log an ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "log a ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "log an ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "set an ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "set a ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "create a ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "create an ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "create an engagement of the type ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			},
+			{
+				"text": " for a salesperson named ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "create an ",
+				"userDefined": false
+			},
+			{
+				"text": "engagement",
+				"userDefined": true,
+				"alias": "engagement",
+				"meta": "@ENGAGEMENT"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "create an engagement",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "create a sales engagement for ",
+				"userDefined": false
+			},
+			{
+				"text": "salesperson",
+				"userDefined": true,
+				"alias": "salesperson",
+				"meta": "@SALESPERSON"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

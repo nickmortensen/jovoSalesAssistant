@@ -1,0 +1,845 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "sales assist",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "GetContactInfo",
+          "slots": [
+            {
+              "name": "contactInfo",
+              "type": "CONTACTINFO"
+            },
+            {
+              "name": "contact",
+              "type": "CONTACTS"
+            }
+          ],
+          "samples": [
+            "can I get the email for Dave Rose",
+            "can you get me the {contactInfo} on {contact}",
+            "i need contact information for {contact}",
+            "call up the {contactInfo} for {contact}",
+            "get the {contactInfo} for {contact}",
+            "do you have {contactInfo} for {contact}",
+            "can I get the {contactInfo} of {contact}",
+            "can I get the {contactInfo} for {contact}",
+            "gimmee the {contactInfo} for {contact}",
+            "gimmee an {contactInfo} for {contact}",
+            "gimmee a {contactInfo} for {contact}",
+            "give me an {contactInfo} for {contact}",
+            "give me a {contactInfo} for {contact}",
+            "give me {contact} for {contactInfo}",
+            "tell me the {contactInfo} for {contact}",
+            "tell me the {contactInfo} of {contact}",
+            "tell me the {contactInfo} on {contact}",
+            "tell me {contact} of {contactInfo}",
+            "what is the {contact} of {contactInfo}",
+            "what is the {contactInfo} for {contact}",
+            "what is the {contactInfo} of {contact}",
+            "what is the {contactInfo} on {contact}",
+            "whats the {contactInfo} for {contact}",
+            "I want the {contactInfo} for {contact}",
+            "I want a {contactInfo} for {contact}",
+            "I want an {contactInfo} for {contact}",
+            "can you tell me the {contactInfo} for {contact}",
+            "can you tell me the {contactInfo} of {contact}",
+            "can you tell me the {contactInfo} on {contact}",
+            "can you get me the {contactInfo} for {contact}",
+            "can you get me the {contactInfo} of {contact}"
+          ]
+        },
+        {
+          "name": "GetSkillInfoIntent",
+          "slots": [],
+          "samples": [
+            "what can this skill do",
+            "what does this skill do",
+            "tell me about the skill",
+            "tell me how to use you",
+            "what are my options",
+            "what my options are"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "call",
+                "synonyms": [
+                  "call",
+                  "Call",
+                  "calls",
+                  "CALLS",
+                  "Calls"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "email",
+                "synonyms": [
+                  "email",
+                  "Email",
+                  "eMail",
+                  "emails",
+                  "e-mail",
+                  "e-mails",
+                  "mail"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "meeting",
+                "synonyms": [
+                  "goto meeting",
+                  "Meeting",
+                  "MEETING",
+                  "meetings"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "note",
+                "synonyms": [
+                  "notation",
+                  "memo",
+                  "sales memo",
+                  "sales note",
+                  "note",
+                  "Note",
+                  "notes"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "task",
+                "synonyms": [
+                  "too doo",
+                  "to-do",
+                  "to do",
+                  "task",
+                  "Task",
+                  "tasks"
+                ]
+              }
+            }
+          ],
+          "name": "ENGAGEMENT"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Williams"
+              }
+            },
+            {
+              "name": {
+                "value": "Kerkovich-Williams"
+              }
+            },
+            {
+              "name": {
+                "value": "Blum"
+              }
+            },
+            {
+              "name": {
+                "value": "Rose"
+              }
+            },
+            {
+              "name": {
+                "value": "Fagan"
+              }
+            }
+          ],
+          "name": "LAST_NAME"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "website",
+                "synonyms": [
+                  "homepage",
+                  "webpage",
+                  "url",
+                  "ewe are el"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "zip",
+                "synonyms": [
+                  "zipcode",
+                  "zip code",
+                  "postal code"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "state"
+              }
+            },
+            {
+              "name": {
+                "value": "city"
+              }
+            },
+            {
+              "name": {
+                "value": "extension",
+                "synonyms": [
+                  "ext"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mobilephone",
+                "synonyms": [
+                  "mobile",
+                  "mobil",
+                  "cell phone"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "all",
+                "synonyms": [
+                  "all info",
+                  "any info",
+                  "any information",
+                  "all information",
+                  "summary",
+                  "the rundown"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "phone",
+                "synonyms": [
+                  "phone number",
+                  "number",
+                  "telephone",
+                  "digits"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "name"
+              }
+            },
+            {
+              "name": {
+                "value": "title",
+                "synonyms": [
+                  "job title",
+                  "position",
+                  "position within",
+                  "position title"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "email",
+                "synonyms": [
+                  "email address"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "company",
+                "synonyms": [
+                  "company name",
+                  "business",
+                  "entity",
+                  "operation",
+                  "outfit"
+                ]
+              }
+            }
+          ],
+          "name": "CONTACTINFO"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "max blum"
+              }
+            },
+            {
+              "id": "421151",
+              "name": {
+                "value": "lon sarofsky",
+                "synonyms": [
+                  "car czar"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "alex kerkovich"
+              }
+            },
+            {
+              "name": {
+                "value": "jane kerkovich-williams"
+              }
+            },
+            {
+              "name": {
+                "value": "brad williams"
+              }
+            },
+            {
+              "name": {
+                "value": "dave rose"
+              }
+            },
+            {
+              "name": {
+                "value": "Penny Hartz"
+              }
+            },
+            {
+              "name": {
+                "value": "Mark Payne"
+              }
+            },
+            {
+              "name": {
+                "value": "Melissa Kelly"
+              }
+            },
+            {
+              "name": {
+                "value": "Steve Chapman"
+              }
+            },
+            {
+              "name": {
+                "value": "Sylvia Jaimes"
+              }
+            },
+            {
+              "name": {
+                "value": "Mehemt Inal"
+              }
+            },
+            {
+              "name": {
+                "value": "Yevgen Melnikov"
+              }
+            },
+            {
+              "name": {
+                "value": "Jason McFadden"
+              }
+            },
+            {
+              "name": {
+                "value": "Brad Berkowitz"
+              }
+            },
+            {
+              "name": {
+                "value": "Jack Hill"
+              }
+            },
+            {
+              "name": {
+                "value": "Erik Thomas"
+              }
+            },
+            {
+              "name": {
+                "value": "Donna Lisle"
+              }
+            },
+            {
+              "name": {
+                "value": "James Dean"
+              }
+            },
+            {
+              "name": {
+                "value": "Sal Naber"
+              }
+            },
+            {
+              "name": {
+                "value": "Pete Simon"
+              }
+            },
+            {
+              "name": {
+                "value": "Taylor Silva"
+              }
+            },
+            {
+              "name": {
+                "value": "Jeff Palmquist"
+              }
+            },
+            {
+              "name": {
+                "value": "Brian Carroll"
+              }
+            },
+            {
+              "name": {
+                "value": "Tim Ferris"
+              }
+            },
+            {
+              "name": {
+                "value": "Nick D'Amato"
+              }
+            },
+            {
+              "name": {
+                "value": "Craig Schmitt"
+              }
+            },
+            {
+              "name": {
+                "value": "Mike Plant"
+              }
+            },
+            {
+              "name": {
+                "value": "Brenda Wilbur"
+              }
+            },
+            {
+              "name": {
+                "value": "Sarah Donnelly"
+              }
+            },
+            {
+              "name": {
+                "value": "Jacqueline Bradbury"
+              }
+            },
+            {
+              "name": {
+                "value": "Dennis Moore"
+              }
+            },
+            {
+              "name": {
+                "value": "Jeff Merritt"
+              }
+            },
+            {
+              "name": {
+                "value": "Mike Saverino"
+              }
+            },
+            {
+              "name": {
+                "value": "Roger McDonald"
+              }
+            },
+            {
+              "name": {
+                "value": "Brad Schrock"
+              }
+            },
+            {
+              "name": {
+                "value": "Jose Sandoval"
+              }
+            },
+            {
+              "name": {
+                "value": "Karin Martin"
+              }
+            },
+            {
+              "name": {
+                "value": "Jim Stewart"
+              }
+            },
+            {
+              "name": {
+                "value": "Dave Johns"
+              }
+            },
+            {
+              "name": {
+                "value": "Jeff Longwell"
+              }
+            },
+            {
+              "name": {
+                "value": "Alan Freeman"
+              }
+            },
+            {
+              "name": {
+                "value": "Mike Schilling"
+              }
+            },
+            {
+              "name": {
+                "value": "Brian Brocato"
+              }
+            },
+            {
+              "name": {
+                "value": "Brian Dolan"
+              }
+            },
+            {
+              "name": {
+                "value": "Lorna Gray"
+              }
+            },
+            {
+              "name": {
+                "value": "Frank Gambino"
+              }
+            },
+            {
+              "name": {
+                "value": "Jonathan Stahl"
+              }
+            },
+            {
+              "name": {
+                "value": "Harold Leeman"
+              }
+            },
+            {
+              "name": {
+                "value": "Jeff King"
+              }
+            },
+            {
+              "name": {
+                "value": "Mike Hurt"
+              }
+            },
+            {
+              "name": {
+                "value": "Michael Sawaya"
+              }
+            },
+            {
+              "name": {
+                "value": "Jane Normansell"
+              }
+            },
+            {
+              "name": {
+                "value": "Pat Fagan"
+              }
+            },
+            {
+              "name": {
+                "value": "Tim Lister"
+              }
+            },
+            {
+              "name": {
+                "value": "Christian howard"
+              }
+            },
+            {
+              "name": {
+                "value": "Anusha Leyden"
+              }
+            },
+            {
+              "name": {
+                "value": "Dhaval Jagani"
+              }
+            },
+            {
+              "name": {
+                "value": "Marco Auteri"
+              }
+            },
+            {
+              "name": {
+                "value": "Jenna Brannan"
+              }
+            },
+            {
+              "name": {
+                "value": "Jonathan Emmett"
+              }
+            },
+            {
+              "name": {
+                "value": "Jaimie Leonoff"
+              }
+            },
+            {
+              "name": {
+                "value": "Chris Miles"
+              }
+            },
+            {
+              "name": {
+                "value": "Sophia Kelly"
+              }
+            },
+            {
+              "name": {
+                "value": "AJ Faxel"
+              }
+            },
+            {
+              "name": {
+                "value": "Lorianne Lamonica"
+              }
+            },
+            {
+              "name": {
+                "value": "Dave McNamara"
+              }
+            },
+            {
+              "name": {
+                "value": "Kim Townsend"
+              }
+            },
+            {
+              "name": {
+                "value": "Lorianne Lamonica"
+              }
+            },
+            {
+              "name": {
+                "value": "Steve Kerepesi"
+              }
+            },
+            {
+              "name": {
+                "value": "Jay Manar"
+              }
+            },
+            {
+              "name": {
+                "value": "Eugene Calabrase"
+              }
+            },
+            {
+              "name": {
+                "value": "Joseph LeCates"
+              }
+            },
+            {
+              "name": {
+                "value": "Gregory Blue"
+              }
+            },
+            {
+              "name": {
+                "value": "Robert Treece"
+              }
+            },
+            {
+              "name": {
+                "value": "Mike Scancarello"
+              }
+            },
+            {
+              "name": {
+                "value": "Erika Gunerman"
+              }
+            },
+            {
+              "name": {
+                "value": "Amber Gnann"
+              }
+            },
+            {
+              "name": {
+                "value": "Brian Lees"
+              }
+            },
+            {
+              "name": {
+                "value": "Adella Phy"
+              }
+            },
+            {
+              "name": {
+                "value": "Anthony Brown"
+              }
+            },
+            {
+              "name": {
+                "value": "Ben Stindt"
+              }
+            },
+            {
+              "name": {
+                "value": "Craig Bracken"
+              }
+            },
+            {
+              "name": {
+                "value": "Angel Molette"
+              }
+            },
+            {
+              "name": {
+                "value": "Bill Morelli"
+              }
+            },
+            {
+              "name": {
+                "value": "Greg Willis"
+              }
+            },
+            {
+              "name": {
+                "value": "CJ Wessel"
+              }
+            },
+            {
+              "name": {
+                "value": "Chad Philhour"
+              }
+            },
+            {
+              "name": {
+                "value": "David Wood"
+              }
+            },
+            {
+              "name": {
+                "value": "Alexandra Santana"
+              }
+            },
+            {
+              "name": {
+                "value": "Aaron Guiter"
+              }
+            },
+            {
+              "name": {
+                "value": "Andy Welch"
+              }
+            },
+            {
+              "name": {
+                "value": "Jason McKee"
+              }
+            },
+            {
+              "name": {
+                "value": "Alison Ballweg"
+              }
+            },
+            {
+              "name": {
+                "value": "Ihn Huh"
+              }
+            },
+            {
+              "name": {
+                "value": "JD Busch"
+              }
+            },
+            {
+              "name": {
+                "value": "Andy Bruce"
+              }
+            },
+            {
+              "name": {
+                "value": "Jaimie Bulla"
+              }
+            },
+            {
+              "name": {
+                "value": "Diana Banari"
+              }
+            },
+            {
+              "name": {
+                "value": "Colin Fitzgibbons"
+              }
+            },
+            {
+              "name": {
+                "value": "Barton Strawn"
+              }
+            },
+            {
+              "name": {
+                "value": "Michael Smith"
+              }
+            },
+            {
+              "name": {
+                "value": "Christopher Relph"
+              }
+            },
+            {
+              "name": {
+                "value": "Fisher Chelsey"
+              }
+            },
+            {
+              "name": {
+                "value": "Michael DiSabato"
+              }
+            }
+          ],
+          "name": "CONTACTS"
+        }
+      ]
+    }
+  },
+  "version": "2"
+}

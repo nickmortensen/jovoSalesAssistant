@@ -1,0 +1,37 @@
+{
+  "name": "SalesAssist",
+  "version": "1.0.0",
+  "description": "Sales Assistant for Jones Sign Company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Mortensen",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.0.0",
+    "ask-sdk-model": "^1.0.0",
+    "i18next": "^11.8.0",
+    "i18next-sprintf-postprocessor": "^0.2.2",
+    "html-entities": "^1.2.1",
+    "hubspot": "^2.1.1",
+    "ssml-builder": "^0.4.3",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickmortensen/JonesyBotRefactored.git"
+  },
+  "keywords": [
+    "jonessign",
+    "alexa",
+    "hubspot"
+  ],
+  "bugs": {
+    "url": "https://github.com/nickmortensen/JonesyBotRefactored/issues"
+  },
+  "homepage": "https://github.com/nickmortensen/JonesyBotRefactored#readme"
+}

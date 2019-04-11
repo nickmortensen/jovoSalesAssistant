@@ -1,0 +1,23 @@
+{
+	"name": "GetContactInfoIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": true,
+					"name": "contactInfo",
+					"value": "$contactInfo",
+					"dataType": "@CONTACTINFO"
+				},
+				{
+					"isList": false,
+					"name": "contact",
+					"value": "$contact",
+					"dataType": "@CONTACTS"
+				}
+			]
+		}
+	]
+}

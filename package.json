@@ -1,0 +1,48 @@
+{
+  "name": "sales-assistant-jones-sign-co",
+  "version": "2.0.3",
+  "description": "Sales Assistant for Jones Sign Company",
+  "main": "src/index.js",
+  "dependencies": {
+    "ask-sdk-core": "^2.0.0",
+    "ask-sdk-model": "^1.0.0",
+    "hubspot": "^2.1.1",
+    "jovo-db-filedb": "^2.2.0",
+    "jovo-framework": "^2.2.1",
+    "jovo-platform-alexa": "^2.2.1",
+    "jovo-platform-googleassistant": "^2.2.1",
+    "i18next": "^11.8.0",
+    "i18next-sprintf-postprocessor": "^0.2.2",
+    "html-entities": "^1.2.1",
+    "hubspot": "^2.1.1",
+    "ssml-builder": "^0.4.3",
+    "moment": "^2.24.0",
+    "jovo-plugin-debugger": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-install": "^1.1.0",
+    "gulp-run-command": "0.0.9",
+    "gulp-zip": "^4.2.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "tsc": "node -v",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "bundle": "gulp --gulpfile node_modules/jovo-framework/gulpfile.js --cwd ./",
+    "start": "cd src && node index.js --webhook",
+    "launch": "npm start -- --launch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickmortensen/JonesyBotRefactored.git"
+  },
+  "author": "nivck mottrndrn",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nickmortensen/JonesyBotRefactored/issues"
+  },
+  "homepage": "https://github.com/nickmortensen/JonesyBotRefactored#readme"
+}

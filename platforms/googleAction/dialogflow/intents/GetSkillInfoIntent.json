@@ -1,0 +1,10 @@
+{
+	"name": "GetSkillInfoIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": []
+		}
+	]
+}

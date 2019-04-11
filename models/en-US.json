@@ -1,0 +1,1349 @@
+{
+    "invocation": "sales assistant",
+    "intents": [
+        {
+            "name": "FallbackIntent",
+            "alexa": {
+                "name": "AMAZON.FallbackIntent"
+            },
+            "phrases": []
+        },
+        {
+            "name": "NavigateHomeIntent",
+            "alexa": {
+                "name": "AMAZON.NavigateHomeIntent"
+            },
+            "phrases": [
+                "return home",
+                "get me out of here",
+                "home"
+            ]
+        },
+        {
+            "name": "NoIntent",
+            "alexa": {
+                "name": "AMAZON.NoIntent"
+            },
+            "phrases": [
+                "no",
+                "no thanks",
+                "nope",
+                "na"
+            ]
+        },
+        {
+            "name": "YesIntent",
+            "alexa": {
+                "name": "AMAZON.YesIntent"
+            },
+            "phrases": [
+                "yes",
+                "yes please",
+                "sure",
+                "yeah",
+                "yep",
+                "okay"
+            ]
+        },
+        {
+            "name": "CancelIntent",
+            "alexa": {
+                "name": "AMAZON.CancelIntent"
+            },
+            "phrases": [
+                "cancel",
+                "never mind",
+                "forget it",
+                "cancel please",
+                "please cancel"
+            ]
+        },
+        {
+            "name": "StopIntent",
+                  "alexa": {
+                    "name": "AMAZON.StopIntent"
+                  },
+                  "phrases": [
+                    "stop",
+                    "stop please",
+                    "please stop",
+                    "bitte hör auf"
+                ],
+                  "dialogflow": {
+                    "events": [
+                        {
+                            "name": "actions_intent_CANCEL"
+                        }
+                    ]
+                  }
+        },
+        {
+            "name": "HelpIntent",
+            "alexa": {
+                "name": "AMAZON.HelpIntent"
+            },
+            "phrases": [
+                "help",
+                "help me",
+                "help please",
+                "can you help me",
+                "what can you tell me",
+                "could you help",
+                "what can i do"
+            ]
+        },
+        {
+            "name": "HelloWorldIntent",
+            "phrases": [
+                "hello",
+                "say hello",
+                "say hello world"
+            ]
+        },
+        {
+            "name": "MyNameIsIntent",
+            "phrases": [
+                "{name}",
+                "my name is {name}",
+                "i am {name}",
+                "you can call me {name}"
+            ],
+            "inputs": [
+                {
+                    "name": "name",
+                    "type": {
+                        "alexa": "AMAZON.US_FIRST_NAME",
+                        "dialogflow": "@sys.given-name"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GetNewDealsIntent",
+            "phrases": [
+                "What are the latest deals for {salesperson}",
+                "What has closed recently for {salesperson}",
+                "get me the latest deals",
+                "get me the latest deals in {pipeline}",
+                "new deals",
+                "what are the new deals",
+                "what are the new deals for {pipeline}",
+                "get new deals",
+                "what is new in {pipeline}",
+                "whats new in {pipeline}",
+                "get recent {pipeline} deals"
+            ],
+            "inputs": [
+                {
+                    "name": "salesperson",
+                    "type": {
+                        "alexa": "SALESPERSON",
+                        "dialogflow": "SALESPERSON"
+                    }
+                },
+                {
+                    "name": "pipeline",
+                    "type": {
+                        "alexa": "PIPELINE",
+                        "dialogflow": "PIPELINE"
+                    },
+                    "dialogflow": {
+                        "isList": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GetContactInfoIntent",
+            "phrases": [
+                "can I get the email for Dave Rose",
+                "can you get me the {contactInfo} on {contact}",
+                "i need contact information for {contact}",
+                "call up the {contactInfo} for {contact}",
+                "get the {contactInfo} for {contact}",
+                "do you have {contactInfo} for {contact}",
+                "can I get the {contactInfo} of {contact}",
+                "can I get the {contactInfo} for {contact}",
+                "gimmee the {contactInfo} for {contact}",
+                "gimmee an {contactInfo} for {contact}",
+                "gimmee a {contactInfo} for {contact}",
+                "give me an {contactInfo} for {contact}",
+                "give me a {contactInfo} for {contact}",
+                "give me {contact} for {contactInfo}",
+                "tell me the {contactInfo} for {contact}",
+                "tell me the {contactInfo} of {contact}",
+                "tell me the {contactInfo} on {contact}",
+                "tell me {contact} of {contactInfo}",
+                "what is the {contact} of {contactInfo}",
+                "what is the {contactInfo} for {contact}",
+                "what is the {contactInfo} of {contact}",
+                "what is the {contactInfo} on {contact}",
+                "whats the {contactInfo} for {contact}",
+                "I want the {contactInfo} for {contact}",
+                "I want a {contactInfo} for {contact}",
+                "I want an {contactInfo} for {contact}",
+                "can you tell me the {contactInfo} for {contact}",
+                "can you tell me the {contactInfo} of {contact}",
+                "can you tell me the {contactInfo} on {contact}",
+                "can you get me the {contactInfo} for {contact}",
+                "can you get me the {contactInfo} of {contact}"
+            ],
+            "inputs": [
+                {
+                    "name": "contactInfo",
+                    "type": {
+                        "alexa": "CONTACTINFO",
+                        "dialogflow": "CONTACTINFO"
+                    },
+                    "dialogflow": {
+                        "isList": true
+                    }
+                },
+                {
+                    "name": "contact",
+                    "type": {
+                        "alexa": "CONTACTS",
+                        "dialogflow": "CONTACTS"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "CreateEngagementForIntent",
+            "phrases": [
+                "log a {engagement} for",
+                "log an {engagement} for",
+                "log a {engagement} for {salesperson}",
+                "log an {engagement} for {salesperson}",
+                "set an {engagement} for {salesperson}",
+                "set a {engagement} for {salesperson}",
+                "create a {engagement} for {salesperson}",
+                "create an {engagement} for {salesperson}",
+                "create an engagement of the type {engagement} for a salesperson named {salesperson}",
+                "create an {engagement}",
+                "create an engagement",
+                "create a sales engagement for {salesperson}"
+            ],
+            "inputs": [
+                {
+                    "name": "engagement",
+                    "type": {
+                        "alexa": "ENGAGEMENT",
+                        "dialogflow": "ENGAGEMENT"
+                    },
+                    "dialogflow": {
+                        "isList": true
+                    }
+                },
+                {
+                    "name": "salesperson",
+                    "type": {
+                        "alexa": "SALESPERSON",
+                        "dialogflow": "SALESPERSON"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GetSkillInfoIntent",
+            "phrases": [
+                "what can i do with this",
+                "what do you do",
+                "what can this skill do",
+                "what does this skill do",
+                "tell me about the skill",
+                "tell me how to use you",
+                "what are my options",
+                "what my options are"
+            ],
+            "inputs": []
+        }
+    ],
+    "inputTypes": [
+        {
+            "name": "ENGAGEMENT",
+            "values": [
+                {
+                    "value": "call",
+                    "synonyms": [
+                        "call",
+                        "Call",
+                        "calls",
+                        "CALLS",
+                        "Calls"
+                    ]
+                },
+                {
+                    "value": "email",
+                    "synonyms": [
+                        "email",
+                        "Email",
+                        "eMail",
+                        "emails",
+                        "e-mail",
+                        "e-mails",
+                        "mail"
+                    ]
+                },
+                {
+                    "value": "meeting",
+                    "synonyms": [
+                        "goto meeting",
+                        "Meeting",
+                        "MEETING",
+                        "meetings"
+                    ]
+                },
+                {
+                    "value": "note",
+                    "synonyms": [
+                        "notation",
+                        "memo",
+                        "sales memo",
+                        "sales note",
+                        "note",
+                        "Note",
+                        "notes"
+                    ]
+                },
+                {
+                    "value": "task",
+                    "synonyms": [
+                        "too doo",
+                        "to-do",
+                        "to do",
+                        "task",
+                        "Task",
+                        "tasks"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "LAST_NAME",
+            "values": [
+                {
+                    "value": "Williams"
+                },
+                {
+                    "value": "Kerkovich-Williams"
+                },
+                {
+                    "value": "Blum"
+                },
+                {
+                    "value": "Rose"
+                },
+                {
+                    "value": "Fagan"
+                }
+            ]
+        },
+        {
+            "name": "CONTACTINFO",
+            "values": [
+                {
+                    "value": "website",
+                    "synonyms": [
+                        "homepage",
+                        "webpage",
+                        "url",
+                        "ewe are el"
+                    ]
+                },
+                {
+                    "value": "zip",
+                    "synonyms": [
+                        "zipcode",
+                        "zip code",
+                        "postal code"
+                    ]
+                },
+                {
+                    "value": "state"
+                },
+                {
+                    "value": "city"
+                },
+                {
+                    "value": "extension",
+                    "synonyms": [
+                        "ext"
+                    ]
+                },
+                {
+                    "value": "mobilephone",
+                    "synonyms": [
+                        "mobile",
+                        "mobil",
+                        "cell phone"
+                    ]
+                },
+                {
+                    "value": "all",
+                    "synonyms": [
+                    "all info",
+                    "any info",
+                    "any information",
+                    "all information",
+                    "summary",
+                    "the rundown"
+                    ]
+                },
+                {
+                    "value": "phone",
+                    "synonyms": [
+                    "phone number",
+                    "number",
+                    "telephone",
+                    "digits"
+                    ]
+                },
+                {
+                    "value": "name"
+                },
+                {
+                    "value": "title",
+                    "synonyms": [
+                    "job title",
+                    "position",
+                    "position within",
+                    "position title"
+                    ]
+                },
+                {
+                    "value": "email",
+                    "synonyms": [
+                    "email address"
+                    ]
+                },
+                {
+                    "value": "company",
+                    "synonyms": [
+                    "company name",
+                    "business",
+                    "entity",
+                    "operation",
+                    "outfit"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CONTACTS",
+            "values": [
+                {
+                    "value": "max blum"
+                },
+                {
+                    "value": "lon sarofsky",
+                    "synonyms": [
+                        "car czar"
+                    ],
+                    "id": "421151"
+                },
+                {
+                    "value": "alex kerkovich"
+                },
+                {
+                    "value": "jane kerkovich-williams"
+                },
+                {
+                    "value": "brad williams"
+                },
+                {
+                    "value": "dave rose"
+                },
+                {
+                    "value": "Penny Hartz"
+                },
+                {
+                    "value": "Mark Payne"
+                },
+                {
+                    "value": "Melissa Kelly"
+                },
+                {
+                    "value": "Steve Chapman"
+                },
+                {
+                    "value": "Sylvia Jaimes"
+                },
+                {
+                    "value": "Mehemt Inal"
+                },
+                {
+                    "value": "Yevgen Melnikov"
+                },
+                {
+                    "value": "Jason McFadden"
+                },
+                {
+                    "value": "Brad Berkowitz"
+                },
+                {
+                    "value": "Jack Hill"
+                },
+                {
+                    "value": "Erik Thomas"
+                },
+                {
+                    "value": "Donna Lisle"
+                },
+                {
+                    "value": "James Dean"
+                },
+                {
+                    "value": "Sal Naber"
+                },
+                {
+                    "value": "Pete Simon"
+                },
+                {
+                    "value": "Taylor Silva"
+                },
+                {
+                    "value": "Jeff Palmquist"
+                },
+                {
+                    "value": "Brian Carroll"
+                },
+                {
+                    "value": "Tim Ferris"
+                },
+                {
+                    "value": "Nick D'Amato"
+                },
+                {
+                    "value": "Craig Schmitt"
+                },
+                {
+                    "value": "Mike Plant"
+                },
+                {
+                    "value": "Brenda Wilbur"
+                },
+                {
+                    "value": "Sarah Donnelly"
+                },
+                {
+                    "value": "Jacqueline Bradbury"
+                },
+                {
+                    "value": "Dennis Moore"
+                },
+                {
+                    "value": "Jeff Merritt"
+                },
+                {
+                    "value": "Mike Saverino"
+                },
+                {
+                    "value": "Roger McDonald"
+                },
+                {
+                    "value": "Brad Schrock"
+                },
+                {
+                    "value": "Jose Sandoval"
+                },
+                {
+                    "value": "Karin Martin"
+                },
+                {
+                    "value": "Jim Stewart"
+                },
+                {
+                    "value": "Dave Johns"
+                },
+                {
+                    "value": "Jeff Longwell"
+                },
+                {
+                    "value": "Alan Freeman"
+                },
+                {
+                    "value": "Mike Schilling"
+                },
+                {
+                    "value": "Brian Brocato"
+                },
+                {
+                    "value": "Brian Dolan"
+                },
+                {
+                    "value": "Lorna Gray"
+                },
+                {
+                    "value": "Frank Gambino"
+                },
+                {
+                    "value": "Jonathan Stahl"
+                },
+                {
+                    "value": "Harold Leeman"
+                },
+                {
+                    "value": "Jeff King"
+                },
+                {
+                    "value": "Mike Hurt"
+                },
+                {
+                    "value": "Michael Sawaya"
+                },
+                {
+                    "value": "Jane Normansell"
+                },
+                {
+                    "value": "Pat Fagan"
+                },
+                {
+                    "value": "Tim Lister"
+                },
+                {
+                    "value": "Christian howard"
+                },
+                {
+                    "value": "Anusha Leyden"
+                },
+                {
+                    "value": "Dhaval Jagani"
+                },
+                {
+                    "value": "Marco Auteri"
+                },
+                {
+                    "value": "Jenna Brannan"
+                },
+                {
+                    "value": "Jonathan Emmett"
+                },
+                {
+                    "value": "Jaimie Leonoff"
+                },
+                {
+                    "value": "Chris Miles"
+                },
+                {
+                    "value": "Sophia Kelly"
+                },
+                {
+                    "value": "AJ Faxel"
+                },
+                {
+                    "value": "Lorianne Lamonica"
+                },
+                {
+                    "value": "Dave McNamara"
+                },
+                {
+                    "value": "Kim Townsend"
+                },
+                {
+                    "value": "Lorianne Lamonica"
+                },
+                {
+                    "value": "Steve Kerepesi"
+                },
+                {
+                    "value": "Jay Manar"
+                },
+                {
+                    "value": "Eugene Calabrase"
+                },
+                {
+                    "value": "Joseph LeCates"
+                },
+                {
+                    "value": "Gregory Blue"
+                },
+                {
+                    "value": "Robert Treece"
+                },
+                {
+                    "value": "Mike Scancarello"
+                },
+                {
+                    "value": "Erika Gunerman"
+                },
+                {
+                    "value": "Amber Gnann"
+                },
+                {
+                    "value": "Brian Lees"
+                },
+                {
+                    "value": "Adella Phy"
+                },
+                {
+                    "value": "Anthony Brown"
+                },
+                {
+                    "value": "Ben Stindt"
+                },
+                {
+                    "value": "Craig Bracken"
+                },
+                {
+                    "value": "Angel Molette"
+                },
+                {
+                    "value": "Bill Morelli"
+                },
+                {
+                    "value": "Greg Willis"
+                },
+                {
+                    "value": "CJ Wessel"
+                },
+                {
+                    "value": "Chad Philhour"
+                },
+                {
+                    "value": "David Wood"
+                },
+                {
+                    "value": "Alexandra Santana"
+                },
+                {
+                    "value": "Aaron Guiter"
+                },
+                {
+                    "value": "Andy Welch"
+                },
+                {
+                    "value": "Jason McKee"
+                },
+                {
+                    "value": "Alison Ballweg"
+                },
+                {
+                    "value": "Ihn Huh"
+                },
+                {
+                    "value": "JD Busch"
+                },
+                {
+                    "value": "Andy Bruce"
+                },
+                {
+                    "value": "Jaimie Bulla"
+                },
+                {
+                    "value": "Diana Banari"
+                },
+                {
+                    "value": "Colin Fitzgibbons"
+                },
+                {
+                    "value": "Barton Strawn"
+                },
+                {
+                    "value": "Michael Smith"
+                },
+                {
+                    "value": "Christopher Relph"
+                },
+                {
+                    "value": "Fisher Chelsey"
+                },
+                {
+                    "value": "Michael DiSabato"
+                }
+            ]
+        },
+        {
+            "name": "SALESPERSON",
+            "values": [
+                {
+                    "value": "Laura Alexander",
+                    "synonyms": [
+                        "laurel alexander",
+                        "laura a",
+                        "laurel a",
+                        "laurel"
+                    ]
+                },
+                {
+                    "value": "Ryan Barkby",
+                    "synonyms": [
+                        "ryan",
+                        "ryan in IT",
+                        "arr bee",
+                        "ryan b"
+                    ]
+                },
+                {
+                    "value": "Patrick Basche",
+                    "synonyms": [
+                        "PATRICK",
+                        "BASH",
+                        "BASCHE",
+                        "PB",
+                        "PAT BASCHE",
+                        "PAT in Dallas"
+                    ]
+                },
+                {
+                    "value": "Steve Berryman",
+                    "synonyms": [
+                        "berryman",
+                        "berriman",
+                        "berry man",
+                        "steve b"
+                    ]
+                },
+                {
+                    "value": "Michael Bjorklund",
+                    "synonyms": [
+                        "bjorklund",
+                        "mike bjorklund",
+                        "mike b",
+                        "michael b",
+                        "mike in green bay",
+                        "the bjork",
+                        "mike from central"
+                    ]
+                },
+                {
+                    "value": "Jason Boccard",
+                    "synonyms": [
+                        "JASON B",
+                        "boccard"
+                    ]
+                },
+                {
+                    "value": "Rick Campbell",
+                    "synonyms": [
+                        "RICKY",
+                        "RICK",
+                        "CALIFORNIA RICK",
+                        "SAN DIEGO RICK",
+                        "RICK FROM JONES WEST"
+                    ]
+                },
+                {
+                    "value": "Rob Fought",
+                    "synonyms": [
+                        "ROB FOUGHT THE LAW AND THE LAW WON",
+                        "ROBBY F",
+                        "ROBERT FOUGHT"
+                    ]
+                },
+                {
+                    "value": "Dick Frank",
+                    "synonyms": [
+                        "dick f",
+                        "dick",
+                        "richard frank",
+                        "richard f",
+                        "frank"
+                    ]
+                },
+                {
+                    "value": "Jennifer Galvin",
+                    "synonyms": [
+                        "JENNIFER",
+                        "GALVIN",
+                        "jennifer",
+                        "JENNIFER",
+                        "JENIFER",
+                        "JENIFER G",
+                        "JENNIFER G",
+                        "jennifer g",
+                        "jen",
+                        "Jen",
+                        "jen g",
+                        "Jen G",
+                        "Jenn G",
+                        "jenn g",
+                        "jenifer",
+                        "galvin",
+                        "galvatron",
+                        "jennifer galvin"
+                    ]
+                },
+                {
+                    "value": "Jared Gehrt",
+                    "synonyms": [
+                        "jared",
+                        "j-rod",
+                        "gert",
+                        "gertrude"
+                    ]
+                },
+                {
+                    "value": "Charles Godinez",
+                    "synonyms": [
+                        "chuck godinez",
+                        "charles godinez",
+                        "c god",
+                        "see god",
+                        "godinez",
+                        "neptune"
+                    ]
+                },
+                {
+                    "value": "Cori Golden",
+                    "synonyms": [
+                        "cori",
+                        "golden",
+                        "cori g",
+                        "corrine"
+                    ]
+                },
+                {
+                    "value": "Ellen Groff",
+                    "synonyms": [
+                        "ellen",
+                        "groff",
+                        "ellen g",
+                        "evelyn groff"
+                    ]
+                },
+                {
+                    "value": "Mike Hager",
+                    "synonyms": [
+                        "mike h",
+                        "michael hager",
+                        "michael h",
+                        "mike aych"
+                    ]
+                },
+                {
+                    "value": "Dave Heideman",
+                    "synonyms": [
+                        "DAVE H",
+                        "dave h",
+                        "DAVE",
+                        "dave",
+                        "HIDEMAN",
+                        "hideman",
+                        "hydeman",
+                        "heideman",
+                        "heidemann"
+                    ]
+                },
+                {
+                    "value": "Rich Hinshaw",
+                    "synonyms": [
+                        "HINSHAW",
+                        "rich hinshaw",
+                        "rich",
+                        "rich H",
+                        "rich h",
+                        "RICH"
+                    ]
+                },
+                {
+                    "value": "Steve Hirtz",
+                    "synonyms": [
+                        "hirtz",
+                        "hurts",
+                        "steven hirtz",
+                        "steve h"
+                    ]
+                },
+                {
+                    "value": "Ron Hunter",
+                    "synonyms": [
+                        "ronald hunter",
+                        "ron h",
+                        "hunter"
+                    ]
+                },
+                {
+                    "value": "Terry Kasarsky",
+                    "synonyms": [
+                        "terry",
+                        "kasarsky"
+                    ]
+                },
+                {
+                    "value": "Kristopher Kay",
+                    "synonyms": [
+                        "KRIS KAY",
+                        "kris kay",
+                        "chris kay",
+                        "CHRIS KAY",
+                        "Chris Kay",
+                        "Chris K",
+                        "Christopher Kay",
+                        "Christopher K",
+                        "christopher kay",
+                        "Kristopher Kay",
+                        "kk",
+                        "double k",
+                        "dubz k",
+                        "KK"
+                    ]
+                },
+                {
+                    "value": "Martin Kindred",
+                    "synonyms": [
+                        "marty",
+                        "marin",
+                        "martin kay",
+                        "martin k",
+                        "marty k",
+                        "marty kay",
+                        "kindred",
+                        "kindered",
+                        "m kind",
+                        "martin",
+                        "martin kindred",
+                        "mkindred@jonessign.com",
+                        "Martin Kindred"
+                    ]
+                },
+                {
+                    "value": "Troy Korthour",
+                    "synonyms": [
+                        "troy",
+                        "troy k",
+                        "korthour",
+                        "car thor",
+                        "troy car thor",
+                        "troy core thor",
+                        "core thor"
+                    ]
+                },
+                {
+                    "value": "Donna Lacrosse",
+                    "synonyms": [
+                        "donna",
+                        "donna l",
+                        "lacross",
+                        "la cross"
+                    ]
+                },
+                {
+                    "value": "Sara Ledvina",
+                    "synonyms": [
+                        "sarah ledvina",
+                        "sarah levina",
+                        "sara levina",
+                        "sara l",
+                        "sarah l"
+                    ]
+                },
+                {
+                    "value": "Nick Lison",
+                    "synonyms": [
+                        "NICK L",
+                        "LISON",
+                        "OTHER NICK"
+                    ]
+                },
+                {
+                    "value": "Nellie Mcdermott",
+                    "synonyms": [
+                        "nellie",
+                        "nellie mcdermott",
+                        "Nellie Mcdermott",
+                        "nelly mac",
+                        "nelly m",
+                        "mcdermott"
+                    ]
+                },
+                {
+                    "value": "Jimmy Mcdonald",
+                    "synonyms": [
+                        "Jim McDonald",
+                        "James McDonald",
+                        "jimmy mack",
+                        "mcdonald"
+                    ]
+                },
+                {
+                    "value": "Jim Merriman",
+                    "synonyms": [
+                        "Jim",
+                        "jim",
+                        "james",
+                        "james merriman",
+                        "merriman",
+                        "jim m",
+                        "Jim M",
+                        "Merriman",
+                        "Meriman"
+                    ]
+                },
+                {
+                    "value": "Al Mikula",
+                    "synonyms": [
+                        "AL",
+                        "MIKULA",
+                        "mick yoo lah",
+                        "al mick yoo lah",
+                        "al mickoo lah",
+                        "mickoo lah",
+                        "al",
+                        "al from philadelphia"
+                    ]
+                },
+                {
+                    "value": "Kevin Morris",
+                    "synonyms": [
+                        "MORRIS",
+                        "KEVIN"
+                    ]
+                },
+                {
+                    "value": "Nick Mortensen",
+                    "synonyms": [
+                        "NEPOTISM",
+                        "NICK",
+                        "NM",
+                        "nick mortensen",
+                        "nick Mortensen",
+                        "Nick mortensen",
+                        "nick mortenson",
+                        "nick Mortenson",
+                        "Nick mortenson",
+                        "nick m",
+                        "Nick M",
+                        "NICK M"
+                    ]
+                },
+                {
+                    "value": "John Mortensen",
+                    "synonyms": [
+                        "JOHN",
+                        "JM",
+                        "john mortensen",
+                        "jm",
+                        "john m"
+                    ]
+                },
+                {
+                    "value": "Bill O'gorman",
+                    "synonyms": [
+                        "bill o",
+                        "o gorman",
+                        "ogar man",
+                        "ogur man",
+                        "bill from denver"
+                    ]
+                },
+                {
+                    "value": "Mimi Olson",
+                    "synonyms": [
+                        "mimi",
+                        "meemee",
+                        "mimi o",
+                        "mimi from Philadelphia"
+                    ]
+                },
+                {
+                    "value": "Rich Ongirski",
+                    "synonyms": [
+                        "Rich O",
+                        "ongirski"
+                    ]
+                },
+                {
+                    "value": "Taylor Parrish",
+                    "synonyms": [
+                        "Taylor P",
+                        "Parrish",
+                        "Taeler Parrish"
+                    ]
+                },
+                {
+                    "value": "Todd Patrickus",
+                    "synonyms": [
+                        "todd",
+                        "trp",
+                        "todd",
+                        "patrick us",
+                        "todd p"
+                    ]
+                },
+                {
+                    "value": "Dave Peltier",
+                    "synonyms": [
+                        "dave p",
+                        "DP",
+                        "peltier",
+                        "dave pelteer",
+                        "dave pel ti ay",
+                        "dave pelture"
+                    ]
+                },
+                {
+                    "value": "Jason Poland",
+                    "synonyms": [
+                        "JASON P",
+                        "poland",
+                        "jason p",
+                        "jason from denver"
+                    ]
+                },
+                {
+                    "value": "Christina Price",
+                    "synonyms": [
+                        "CHRISTINA FROM TAMPA",
+                        "PRICE",
+                        "CHRISTINA"
+                    ]
+                },
+                {
+                    "value": "Darcy Quigley",
+                    "synonyms": [
+                        "darcy q",
+                        "darcey",
+                        "darcy quickly"
+                    ]
+                },
+                {
+                    "value": "Bill Reicherter",
+                    "synonyms": [
+                        "Bill R",
+                        "William Reicherter",
+                        "bill rikterer",
+                        "bill reekterur",
+                        "bill reekerter",
+                        "bill riketerer"
+                    ]
+                },
+                {
+                    "value": "Bob Russell",
+                    "synonyms": [
+                        "RUSSELL THE LOVE MUSCLE",
+                        "BOB FROM VEGAS",
+                        "BOB R",
+                        "KURT RUSSEL",
+                        "bob russell",
+                        "Bob Russell",
+                        "bob russel",
+                        "Bob Russel"
+                    ]
+                },
+                {
+                    "value": "Steve Rutkowski",
+                    "synonyms": [
+                        "steve r",
+                        "rutkowski",
+                        "steven rutkowski"
+                    ]
+                },
+                {
+                    "value": "Dikran Vartan",
+                    "synonyms": [
+                        "Dikran",
+                        "Dicky Vee",
+                        "Vartan"
+                    ]
+                },
+                {
+                    "value": "Patrick Vaughan",
+                    "synonyms": [
+                        "pat vaughan",
+                        "patrick vaughan",
+                        "pat vaughn",
+                        "patrick vaughn",
+                        "pat von",
+                        "patrick von",
+                        "pvaughan@jonessign.com",
+                        "von",
+                        "vaughan",
+                        "vaughn",
+                        "patrick v",
+                        "pat v"
+                    ]
+                },
+                {
+                    "value": "Mike Waich",
+                    "synonyms": [
+                        "Michael Waich",
+                        "mike w",
+                        "michael w"
+                    ]
+                },
+                {
+                    "value": "Laurel Walker",
+                    "synonyms": [
+                        "laura walker",
+                        "laura w",
+                        "laurel w",
+                        "laurel"
+                    ]
+                },
+                {
+                    "value": "Robb Walker",
+                    "synonyms": [
+                        "rob w",
+                        "robb w",
+                        "walker"
+                    ]
+                },
+                {
+                    "value": "Jerry Zemanski",
+                    "synonyms": [
+                        "jerry",
+                        "z man",
+                        "zee man",
+                        "jerry zee",
+                        "zemanski",
+                        "zemansk"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PIPELINE",
+            "values": [
+                {
+                    "value": "Major Projects",
+                    "synonyms": [
+                        "Major Projects",
+                        "majorprojects",
+                        "major projects",
+                        "mp",
+                        "MP",
+                        "large venue sales",
+                        "large venues",
+                        "parge venue",
+                        "large venue projects",
+                        "default"
+                    ]
+                },
+                {
+                    "value": "National Accounts",
+                    "synonyms": [
+                        "National Accounts",
+                        "national",
+                        "national retail",
+                        "national brands",
+                        "national accounts",
+                        "national sales",
+                        "national brands",
+                        "41216fb1-d3fd-4de5-8054-de80ba5f6754"
+                    ]
+                }
+            ]
+        }
+    ],
+    "dialogflow": {
+        "intents": [
+            {
+                "name": "Default Fallback Intent",
+                "auto": true,
+                "webhookUsed": true,
+                "fallbackIntent": true
+            },
+            {
+                "name": "Default Welcome Intent",
+                "auto": true,
+                "webhookUsed": true,
+                "events": [
+                  {
+                    "name": "WELCOME"
+                  }
+                ]
+            }
+        ]
+    }
+}

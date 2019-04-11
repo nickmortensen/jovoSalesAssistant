@@ -1,0 +1,10 @@
+{
+	"name": "StopIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"events": [
+		{
+			"name": "actions_intent_CANCEL"
+		}
+	]
+}

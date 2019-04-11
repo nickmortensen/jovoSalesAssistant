@@ -1,0 +1,67 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Wildcard",
+          "uri": "https://webhook.jovo.cloud/a29a2c15-ae46-49bf-8c7e-c6531a419f6f"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:address:full:read"
+      },
+      {
+        "name": "alexa::profile:name:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://nickmortensen.com/privacy-policy",
+          "termsOfUseUrl": "https://nickmortensen.com/terms-of-service"
+        }
+      },
+      "allowsPurchases": false,
+      "usesPersonalInfo": true,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Sales Assistant",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/42bb/03dbf3e2381c441797541837a87ff075/APP_ICON?versionId=.VjfY5Y7p1jMwOM5rg5uQHqnoNmgPA_K&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1553699804&Signature=CMn%2BUg7FNmwrO7bDJ0W5jvjEvvc%3D",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/a1a6/86577529ebfc4f8facc2e1e7e37e2764/APP_ICON_LARGE?versionId=oKY7ke_uttfu2JIXBcjJNWGdPcMiTtcV&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1553699804&Signature=4UcWgMWPYVuMPuJhEcXL2RsunfA%3D",
+          "summary": "A Bridge between the Hubspot CRM and Alexa for Jones Sign Company",
+          "description": "Integration between your Hubspot CRM account and Alexa for Jones Sign Company sales staff.",
+          "examplePhrases": [
+            "Alexa, open sales assist",
+            "get the phone number for dave rose",
+            "get the email for brad williams"
+          ],
+          "keywords": [
+            "jonessign",
+            "hubspot",
+            "sales",
+            "assist",
+            "assistant",
+            "jones",
+            "sign",
+            "company"
+          ],
+          "updatesDescription": "Refactor & Hubspot Account link."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "distributionMode": "PUBLIC",
+      "testingInstructions": "No special instructions.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionCountries": []
+    }
+  }
+}

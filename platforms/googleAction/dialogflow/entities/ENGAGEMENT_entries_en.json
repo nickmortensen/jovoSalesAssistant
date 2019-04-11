@@ -1,0 +1,61 @@
+[
+	{
+		"value": "call",
+		"synonyms": [
+			"call",
+			"call",
+			"Call",
+			"calls",
+			"CALLS",
+			"Calls"
+		]
+	},
+	{
+		"value": "email",
+		"synonyms": [
+			"email",
+			"email",
+			"Email",
+			"eMail",
+			"emails",
+			"e-mail",
+			"e-mails",
+			"mail"
+		]
+	},
+	{
+		"value": "meeting",
+		"synonyms": [
+			"meeting",
+			"goto meeting",
+			"Meeting",
+			"MEETING",
+			"meetings"
+		]
+	},
+	{
+		"value": "note",
+		"synonyms": [
+			"note",
+			"notation",
+			"memo",
+			"sales memo",
+			"sales note",
+			"note",
+			"Note",
+			"notes"
+		]
+	},
+	{
+		"value": "task",
+		"synonyms": [
+			"task",
+			"too doo",
+			"to-do",
+			"to do",
+			"task",
+			"Task",
+			"tasks"
+		]
+	}
+]

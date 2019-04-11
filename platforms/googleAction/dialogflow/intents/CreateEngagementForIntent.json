@@ -1,0 +1,23 @@
+{
+	"name": "CreateEngagementForIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": true,
+					"name": "engagement",
+					"value": "$engagement",
+					"dataType": "@ENGAGEMENT"
+				},
+				{
+					"isList": false,
+					"name": "salesperson",
+					"value": "$salesperson",
+					"dataType": "@SALESPERSON"
+				}
+			]
+		}
+	]
+}
