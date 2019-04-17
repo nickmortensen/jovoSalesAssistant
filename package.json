@@ -1,7 +1,7 @@
 {
   "name": "sales-assistant-jones-sign-co",
   "version": "2.0.3",
-  "description": "Sales Assistant for Jones Sign Company",
+  "description": "Sales Assistant for Jones Sign Company using the Jovo Framework",
   "main": "src/index.js",
   "dependencies": {
     "ask-sdk-core": "^2.0.0",
@@ -14,7 +14,6 @@
     "i18next": "^11.8.0",
     "i18next-sprintf-postprocessor": "^0.2.2",
     "html-entities": "^1.2.1",
-    "hubspot": "^2.1.1",
     "ssml-builder": "^0.4.3",
     "moment": "^2.24.0",
     "jovo-plugin-debugger": "^2.2.0"
@@ -33,13 +32,14 @@
     "test": "jest",
     "bundle": "gulp --gulpfile node_modules/jovo-framework/gulpfile.js --cwd ./",
     "start": "cd src && node index.js --webhook",
-    "launch": "npm start -- --launch"
+    "launch": "npm start -- --launch",
+    "experiment": "nodemon test/testing"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickmortensen/jovoSalesAssistant.git"
   },
-  "author": "nivck mottrndrn",
+  "author": "nick mortensen",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/nickmortensen/jovoSalesAssistant/issues"

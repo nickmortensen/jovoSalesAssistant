@@ -4,9 +4,9 @@ const Hubspot       = require('hubspot');
 const Speech        = require('ssml-builder'); // eslint-disable-line
 const AmazonSpeech  = require('ssml-builder/amazon_speech'); // if using Amazon SSML specific tags
 const moment        = require('moment');
-const config        = require('../config/config.json');  // main config folder contains hapi key among other things
+const configuration        = require('../configuration/configuration');  // main config folder contains hapi key among other things
 
-const hubspot       = new Hubspot({ apiKey: config.hubspot.api_key });
+const hubspot       = new Hubspot({ apiKey: configuration.hubspot.apiKey });
 
 
 /**
@@ -401,7 +401,7 @@ exports.getClientId = async query => {
 exports.getClientEmail = async query => {
   let theEmail;
   try {
-    await hubspot.contact.search(query)
+    await hubspot.contacts.search(query)
       .then(results => {
         const { properties } = results.contacts[0];
         theEmail = Object.prototype.hasOwnProperty.call(properties, 'email') ? results.contacts[0].email.value : 'no email';
@@ -453,7 +453,7 @@ exports.getReadableDate = time => {
   // ensure the time given is of the type 'number'
   const timeAsNumber = (typeof time === 'number') ? time : parseInt(time, 8);
   const dateFormat = 'MMM Do, YYYY'; // resolves to example of June, 25th, 2018
-  return moment(time).format(dateFormat);
+  return moment(timeAsNumber).format(dateFormat);
 };
 // ======= END 15. getReadableDate(time)
 
@@ -469,6 +469,40 @@ exports.serialFormatArray = array => {
 exports.getThisInfo = (results, contactInfo) => {
   const person = results.query;
   const { properties } = results.contacts[0];
-  const information = properties.hasOwnProperty(contactInfo) ? properties[contactInfo].value : `No ${info} in Hubspot for ${toCapitalCase(person)}`;
+  const information = Object.prototype.hasOwnProperty.call(properties, contactInfo) ? properties[contactInfo].value : `No in Hubspot for ${person.toCapitalCase()}`;
   return information;
+};
+
+exports.buildClientFromQuery = async person => {
+  const client = {};
+  try {
+    await hubspot.contacts.search(person)
+      .then(results => {
+        const { properties }       = results.contacts[0];
+        client.vid                 = results.contacts[0].vid;
+        client.lastname            = Object.prototype.hasOwnProperty.call(properties, 'lastname') ? properties.lastname.value : '';
+        client.firstname           = Object.prototype.hasOwnProperty.call(properties, 'firstname') ? properties.firstname.value : '';
+        client.name                = `${client.firstname} ${client.lastname}`;
+        client.phoneDigits         = Object.prototype.hasOwnProperty.call(properties, 'phone') ? properties.phone.value.replace(/[- )(\.]/g, '') : 'no number';
+        client.extension           = Object.prototype.hasOwnProperty.call(properties, 'extension') ? properties.extension.value : null;
+        client.phone               = formatPhoneNumber(client.phoneDigits);
+        if (null !== client.extension) client.phone += ` ext. ${client.extension}`;
+        client.website             = Object.prototype.hasOwnProperty.call(properties, 'website') ? properties.website.value : '';
+        client.mobilephone         = Object.prototype.hasOwnProperty.call(properties, 'mobilephone') ? properties.mobilephone.value : '';
+        client.address             = Object.prototype.hasOwnProperty.call(properties, 'address') ? properties.address.value : '';
+        client.city                = Object.prototype.hasOwnProperty.call(properties, 'city') ? properties.city.value : '';
+        client.state               = Object.prototype.hasOwnProperty.call(properties, 'state') ? properties.state.value : '';
+        client.zip                 = Object.prototype.hasOwnProperty.call(properties, 'zip') ? properties.zip.value : '';
+        client.lastname            = Object.prototype.hasOwnProperty.call(properties, 'lastname') ? properties.lastname.value : '';
+        client.company             = Object.prototype.hasOwnProperty.call(properties, 'company') ? properties.company.value : '';
+        client.jobtitle            = Object.prototype.hasOwnProperty.call(properties, 'jobtitle') ? properties.jobtitle.value : '';
+        client.jobtitle            = Object.prototype.hasOwnProperty.call(properties, 'jobtitle') ? properties.jobtitle.value : '';
+        client.company             = Object.prototype.hasOwnProperty.call(properties, 'company') ? properties.company.value : '';
+        client.hubspot_owner_id    = Object.prototype.hasOwnProperty.call(properties, 'hubspot_owner_id') ? properties.hubspot_owner_id.value : '';
+        client.associatedcompanyid = Object.prototype.hasOwnProperty.call(properties, 'associatedcompanyid') ? properties.associatedcompanyid.value : '';
+      }).catch(console.error());
+  } catch (error) {
+    console.error(error);
+  }
+  return client;
 };

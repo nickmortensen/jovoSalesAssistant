@@ -2,6 +2,60 @@
     "invocation": "sales assistant",
     "intents": [
         {
+            "name": "GetContactInfo",
+            "phrases": [
+                "can you get me the {contactInfo} on {contact}",
+                "i need contact information for {contact}",
+                "call up the {contactInfo} for {contact}",
+                "get the {contactInfo} for {contact}",
+                "do you have {contactInfo} for {contact}",
+                "can I get the {contactInfo} of {contact}",
+                "can I get the {contactInfo} for {contact}",
+                "gimmee the {contactInfo} for {contact}",
+                "gimmee an {contactInfo} for {contact}",
+                "gimmee a {contactInfo} for {contact}",
+                "give me an {contactInfo} for {contact}",
+                "give me a {contactInfo} for {contact}",
+                "give me {contact} for {contactInfo}",
+                "tell me the {contactInfo} for {contact}",
+                "tell me the {contactInfo} of {contact}",
+                "tell me the {contactInfo} on {contact}",
+                "tell me {contact} of {contactInfo}",
+                "what is the {contact} of {contactInfo}",
+                "what is the {contactInfo} for {contact}",
+                "what is the {contactInfo} of {contact}",
+                "what is the {contactInfo} on {contact}",
+                "whats the {contactInfo} for {contact}",
+                "I want the {contactInfo} for {contact}",
+                "I want a {contactInfo} for {contact}",
+                "I want an {contactInfo} for {contact}",
+                "can you tell me the {contactInfo} for {contact}",
+                "can you tell me the {contactInfo} of {contact}",
+                "can you tell me the {contactInfo} on {contact}",
+                "can you get me the {contactInfo} for {contact}",
+                "can you get me the {contactInfo} of {contact}"
+            ],
+            "inputs": [
+                {
+                    "name": "contactInfo",
+                    "type": {
+                        "alexa": "CONTACTINFO",
+                        "dialogflow": "CONTACTINFO"
+                    },
+                    "dialogflow": {
+                        "isList": true
+                    }
+                },
+                {
+                    "name": "contact",
+                    "type": {
+                        "alexa": "CONTACTS",
+                        "dialogflow": "CONTACTS"
+                    }
+                }
+            ]
+        },
+        {
             "name": "FallbackIntent",
             "alexa": {
                 "name": "AMAZON.FallbackIntent"
@@ -101,24 +155,6 @@
             ]
         },
         {
-            "name": "MyNameIsIntent",
-            "phrases": [
-                "{name}",
-                "my name is {name}",
-                "i am {name}",
-                "you can call me {name}"
-            ],
-            "inputs": [
-                {
-                    "name": "name",
-                    "type": {
-                        "alexa": "AMAZON.US_FIRST_NAME",
-                        "dialogflow": "@sys.given-name"
-                    }
-                }
-            ]
-        },
-        {
             "name": "GetNewDealsIntent",
             "phrases": [
                 "What are the latest deals for {salesperson}",
@@ -149,61 +185,6 @@
                     },
                     "dialogflow": {
                         "isList": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "GetContactInfoIntent",
-            "phrases": [
-                "can I get the email for Dave Rose",
-                "can you get me the {contactInfo} on {contact}",
-                "i need contact information for {contact}",
-                "call up the {contactInfo} for {contact}",
-                "get the {contactInfo} for {contact}",
-                "do you have {contactInfo} for {contact}",
-                "can I get the {contactInfo} of {contact}",
-                "can I get the {contactInfo} for {contact}",
-                "gimmee the {contactInfo} for {contact}",
-                "gimmee an {contactInfo} for {contact}",
-                "gimmee a {contactInfo} for {contact}",
-                "give me an {contactInfo} for {contact}",
-                "give me a {contactInfo} for {contact}",
-                "give me {contact} for {contactInfo}",
-                "tell me the {contactInfo} for {contact}",
-                "tell me the {contactInfo} of {contact}",
-                "tell me the {contactInfo} on {contact}",
-                "tell me {contact} of {contactInfo}",
-                "what is the {contact} of {contactInfo}",
-                "what is the {contactInfo} for {contact}",
-                "what is the {contactInfo} of {contact}",
-                "what is the {contactInfo} on {contact}",
-                "whats the {contactInfo} for {contact}",
-                "I want the {contactInfo} for {contact}",
-                "I want a {contactInfo} for {contact}",
-                "I want an {contactInfo} for {contact}",
-                "can you tell me the {contactInfo} for {contact}",
-                "can you tell me the {contactInfo} of {contact}",
-                "can you tell me the {contactInfo} on {contact}",
-                "can you get me the {contactInfo} for {contact}",
-                "can you get me the {contactInfo} of {contact}"
-            ],
-            "inputs": [
-                {
-                    "name": "contactInfo",
-                    "type": {
-                        "alexa": "CONTACTINFO",
-                        "dialogflow": "CONTACTINFO"
-                    },
-                    "dialogflow": {
-                        "isList": true
-                    }
-                },
-                {
-                    "name": "contact",
-                    "type": {
-                        "alexa": "CONTACTS",
-                        "dialogflow": "CONTACTS"
                     }
                 }
             ]

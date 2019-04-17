@@ -7,10 +7,11 @@ module.exports = {
   logging: true,
 
   intentMap: {
-  },
-  db: {
-    FileDb: {
-      pathToFile: '../db/db.json',
-    },
+    'AMAZON.StopIntent': 'END',
+    'AMAZON.CancelkIntent': 'END',
+    'AMAZON.HelpIntent': 'HelpIntent',
+    'AMAZON.YesIntent': 'YesIntent',
+    'AMAZON.NoIntent': 'NoIntent',
+    'AMAZON.RepeatIntent': 'RepeatIntent'
   },
 };

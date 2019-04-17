@@ -3,7 +3,12 @@
 /* eslint-disable no-multiple-empty-lines */
 /* BST FOLDER INDEX.JS */
 
-const Alexa       = require('ask-sdk-core');
+const AlexaSkill       = require('ask-sdk-core');
+const { GetSkillInfoIntentHandler } = require('AlexaIntent/GetSkillInfoIntent');
+const { GetNewDealsIntentHandler } = require('AlexaIntent/GetNewDealsIntent');
+const { GetContactInfoIntentHandler } = require('AlexaIntent/GetContactInfoIntent');
+
+
 const Hubspot     = require('hubspot');
 const Entities    = require('html-entities').XmlEntities;
 const MESSAGES    = require('./helpers/Messages'); // houekeeping for constants and recurring messages
@@ -30,6 +35,10 @@ const hubspot = new Hubspot({ apiKey: config.hubspot.api_key });
  * ======= SKILLBUILDER STUFF
 */
 
+
+const alexaRouter = handlerInput => {
+  const
+}
 /* HANDLERS CUSTOM */
 // ============== 1.GetContactInfoHandler
 /**
@@ -165,11 +174,12 @@ const ErrorHandler = {
 };
 
 // SKILLBUILDER STUFF -- BE SURE AND ADD ANY NEW INTENTS BELOW
-const skillBuilder = Alexa.SkillBuilders.custom();
+const skillBuilder = AlexaSkill.SkillBuilders.custom();
 exports.handler = skillBuilder
   .addRequestHandlers(
     GetContactInfoHandler,
-    GetSkillInfoHandler,
+    GetSkillInfoIntentHandler,
+    GetNewDealsIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler

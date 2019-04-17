@@ -1,8 +1,8 @@
-/* eslint-disable no-plusplus */
+
 /**
  * Sort an Array of Objects by the value of a given key
  * Sort an array of objects by a value inside fo the objects
- *
+ * 
  * @link https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
  * @note a8m's answer
  * @param {array} array The array containing the many objects that I'd like to sort out.
@@ -12,12 +12,12 @@
 exports.sortByAttribute = (array, ...attrs) => {
   // generate an array of predicate-objects contains
   // property getter, and descending indicator
-  const predicates = attrs.map(pred => {
+  const predicates = attrs.map((pred) => {
     const descending = pred.charAt(0) === '-' ? -1 : 1;
     const predicate  = pred.replace(/^-/, '');
     return { getter: o => o[predicate], descend: descending };
   });
-    // schwartzian transform idiom implementation. aka: "decorate-sort-undecorate"
+  // schwartzian transform idiom implementation. aka: "decorate-sort-undecorate"
   return array.map(item => ({
     src: item,
     compareValues: predicates.map(predicate => predicate.getter(item)),

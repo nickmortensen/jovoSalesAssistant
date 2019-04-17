@@ -1,0 +1,76 @@
+{
+    "intents": [
+        {
+            "open": "Compare Sales Staff",
+            "intent": "CompareSalesPeople",
+            "spoken": "Compare Sales People",
+            "description": "Pick two members of the sales staff and compare their information",
+            "card": "Compare Salespeople to one another"
+        },
+        {
+            "open": "Keep track of Client Engagements",
+            "intent": "CreateEngagementFor",
+            "spoken": "Log an Engagement with a Client",
+            "description": "You can log an engagement: Choose among several types of engagements: email, call, meeting, note, or task",
+            "card": "Log an engagement. Email, call, meeting, note, or task"
+        },
+        {
+            "open": "curate your contact list",
+            "intent": "CreateOrUpdateContact",
+            "spoken": "Create or Update a Contacts information within the Database",
+            "description": "Add Info for a new Contact or Alter an Existing Contact.",
+            "card": "Add or update contact informtion"
+        },
+        {
+            "open": "Check into Deals",
+            "intent": "DealsInStage",
+            "spoken": "Deals in Stage",
+            "description": "Determine How Many Deals are at a Given Sales Stage",
+            "card": "list deals in a given stage"
+        },
+        {
+            "open": "Find out Who is Engaging",
+            "intent": "EngagementsByPeople",
+            "spoken": "Engagements by People",
+            "description": "Look in on a Given Salesperson's Engagements",
+            "card": "Find out which salesperson is doing what?"
+        },
+        {
+            "intent": "GetContactInfo",
+            "spoken": "Get Contact Info",
+            "description": "Retrieve Stored Information on a Contact or Client",
+            "card": "Retrieve Information on a Contact or Client"
+        },
+        {
+            "intent": "GetOwnerInfo",
+            "spoken": "Get User Info",
+            "description": "Determine which Salesperson is linked to a given client",
+            "card": "Find out salesperson is connected to a client"
+        },
+        {
+            "open": "Find out the latest deals",
+            "intent": "GetNewDeals",
+            "spoken": "Get New Deals",
+            "description": "Get the Latest Deals",
+            "card": "Determine the Latest Deals"
+        },
+        {
+            "intent": "Help",
+            "spoken": "Help",
+            "description": "Find Help",
+            "card": "Find Help"
+        },
+        {
+            "intent": "TellMeAboutSelf",
+            "spoken": "Tell Me About Yourself",
+            "description": "Have Sales Interactor tell You More About Itself",
+            "card": "Get Help"
+        },
+        {
+            "intent": "TotalInDeals",
+            "spoken": "Total in Deals",
+            "description": "Find out the Total Dollar Value of a Given Set of Deals",
+            "card": "determine the total dollar values"
+        }
+    ]
+}

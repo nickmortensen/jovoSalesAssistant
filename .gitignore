@@ -19,3 +19,27 @@ platforms/alexaSkill/lambda/custom/config/config.json
 platforms/alexaSkill/lambda/custom/factskillindex.js
 platforms/alexaSkill/lambda/custom/testing.js
 LICENSE
+
+# seems as if I could delete this, no need to track revisions
+platforms/alexaSkill/lambda/custom/index.bak.js
+
+# contains data that isn't to be seen by the public (API, Names, etc)
+src/configuration
+src/configuration/*
+
+# if these are needed for the application, they will make their way to the src/helpers file -- these are just for refactoring
+src/02helpers/
+src/02helpers/*
+src/02helpers
+
+# I don't know whether I will have that many messages to put them in a module by itself
+src/helpers/Messages.js
+
+# These files are mostly used for unit testing, they aren't live in the application as far as I can tell
+src/helpers/allthestates.js
+ src/helpers/contacts-helper.js
+src/helpers/csv-to-array.js
+src/helpers/get-all-the-owners.js
+src/helpers/get-remote-data.js
+src/helpers/housekeeping/
+src/helpers/time-helper.js
